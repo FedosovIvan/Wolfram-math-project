@@ -1,0 +1,81 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2038,         71]
+NotebookOptionsPosition[      1763,         57]
+NotebookOutlinePosition[      2105,         72]
+CellTagsIndexPosition[      2062,         69]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6851053309710116`*^9, 3.685105332968542*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"LengthHist", "=", "20"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dtln1", "=", "num"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"sr", "=", 
+    RowBox[{"Mean", "[", "dtln1", "]"}]}], ";"}], "  ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "\:0421\:0440\:0435\:0434\:043d\:0435\:0435", " ", 
+    "\:0432\:044b\:0431\:043e\:0440\:043a\:0438"}], " ", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"sgm", "=", 
+    RowBox[{"StandardDeviation", "[", "dtln1", "]"}]}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "\:0414\:0438\:0441\:043f\:0435\:0440\:0441\:0438\:044f", " ", 
+    "\:0432\:044b\:0431\:043e\:0440\:043a\:0438"}], " ", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"normpr", "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"dtln1", "-", "sr"}], ")"}], "/", "sgm"}]}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "\:041d\:043e\:0440\:043c\:0438\:0440\:043e\:0432\:0430\:043d\:0438\:0435",
+     " ", "\:0434\:0430\:043d\:043d\:044b\:0445"}], " ", "*)"}]}]}], "Input"]
+},
+WindowSize->{942, 710},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (October 9, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 94, 1, 31, "Input"],
+Cell[655, 23, 1104, 32, 168, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
